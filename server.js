@@ -21,7 +21,7 @@ app.post('/api/google-login', async (req, res) => {
   const { token } = req.body;
   const ticket = await client.verifyIdToken({
     idToken: token,
-    audience: process.env.clientId,
+    audience: process.env.CLIENT_ID,
   });
   const { name, email, picture } = ticket.getPayload();
   upsert(users, { name, email, picture });
