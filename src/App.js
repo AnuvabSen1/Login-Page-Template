@@ -45,7 +45,7 @@ function App() {
             </div>
           ) : (
             <GoogleLogin
-              clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+              clientId={process.env.1077682893475-nuodbb2kt3akvh0k0p7tfsgr0effkb1a.apps.googleusercontent.com}
               buttonText="Log in with Google"
               onSuccess={handleLogin}
               onFailure={handleFailure}
